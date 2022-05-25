@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Odibee Sans', 'Sans Serif';
+}
+
+#content {
+    background-image: url(../images/cereal.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: max(5px, 2vw);
+    font-size: min(2.2vmax, 30px);
+    text-decoration: underline;
+    text-underline-offset: 20%;
+    background-color: #00000066;
+    width: 100%;
+    height: max(10px, 8vh);
+}
+
+
+.homepage-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2vmax;
+}
+
+.homepage-title {
+    font-size: 5.6vmax;
+}
+
+.footer {
+    width: 100%;
+    height: max(20px, 8vh);
+    background-color: #00000066;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: min(2vmax, 20px);
+}
+
+.footer svg {
+    width: 4vmax;
+}

@@ -1,5 +1,3 @@
-function sayHi() {
-    console.log('Hello');
-}
+import { pageLoad } from './pageLoad';
 
-sayHi();
+pageLoad();
