@@ -4,18 +4,26 @@ body {
     margin: 0px;
     font-family: 'Odibee Sans', 'Sans Serif';
     background-color: #fdfff5;
+    overflow-x: hidden;
 }
 
 #content {
     background-color: #fdfff5;
     width: 100vw;
     height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/cereal.jpg);
     background-size: cover;
     background-position: bottom;
     z-index: -1;
 }
 
 #menu, #contact{
+    margin: 3vmax 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +43,8 @@ body {
     text-underline-offset: 17%;
     background-color: #00000066;
     width: 100%;
-    height: max(10px, 8vh);
+    min-height: 7vh;
+    height: max(80px, 8vh)
 }
 
 
@@ -53,6 +62,7 @@ body {
 
 .footer {
     width: 100%;
+    min-height: 6vh;
     height: max(20px, 8vh);
     background-color: #00000066;
     display: flex;
@@ -80,6 +90,14 @@ body {
 
 .cereal-container, .milks-container, .bowl-container {
     flex-direction: column;
+}
+
+.milks-container {
+    max-height: fit-content;
+}
+
+.milk-list {
+    max-height: 100px;
 }
 
 .cereal-list {
@@ -120,10 +138,12 @@ body {
 
 .about-info {
     flex-direction: row;
+    gap: 2vmax;
 }
 
 .about-container {
     padding: 4%;
+    gap: 1vmax;
 }
 
 .about-text {
