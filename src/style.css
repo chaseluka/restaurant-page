@@ -15,7 +15,7 @@ body {
     z-index: -1;
 }
 
-#menu{
+#menu, #contact{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,4 +93,39 @@ body {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     gap: min(3vmax, 25px);
+}
+
+.contact-container, .contact-info, .about-container, .about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vmax;
+}
+
+.contact-us, .about-owner {
+    font-size: 4vmax;
+}
+
+.contact-container, .about-container {
+    gap: max(20px, 2.7vmax);
+}
+
+.about-info > img {
+    height: 25vh;
+    width: 25vw;
+    border: 10px solid rgb(100, 156, 230);
+    border-radius: 10px;
+}
+
+.about-info {
+    flex-direction: row;
+}
+
+.about-container {
+    padding: 4%;
+}
+
+.about-text {
+    max-width: 250px;
 }
