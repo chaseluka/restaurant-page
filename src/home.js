@@ -1,14 +1,10 @@
-function homeLoad() {
-    const home = document.getElementById('home');
+const homeLoad = (() => {
+    const content = document.getElementById('content');
+    
 
     const homepageMain = document.createElement('div');
     homepageMain.classList.add('homepage-main');
 
-    home.appendChild(homepageMain);
-
-    //header content
-    
-    //main content
     const homepageLocation = document.createElement('div');
     homepageLocation.classList.add('homepage-location');
     homepageLocation.textContent = 'Scranton, Pennsylvania';
@@ -19,9 +15,16 @@ function homeLoad() {
     homepageSlogan.classList.add('homepage-slogan');
     homepageSlogan.textContent = 'As many varieties as you can buy in the store!';
 
-    homepageMain.appendChild(homepageLocation);
-    homepageMain.appendChild(homepageTitle);
-    homepageMain.appendChild(homepageSlogan);
-};
+    const homeAppend = () => {
+        content.style.cssText = 'background-image: url(../images/cereal.jpg);';
+        const home = document.getElementById('home');
+        console.log(home);
+        home.appendChild(homepageMain);
+        homepageMain.appendChild(homepageLocation);
+        homepageMain.appendChild(homepageTitle);
+        homepageMain.appendChild(homepageSlogan);
+    }
+    return {homeAppend}
+})();
 
 export { homeLoad }

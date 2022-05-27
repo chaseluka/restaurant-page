@@ -47,6 +47,16 @@ body {
     height: max(80px, 8vh)
 }
 
+.header > div {
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.header > div:hover {
+    background-color: #4e4e4edd;
+    transform: scale(1.1);
+}
+
 
 .homepage-main {
     display: flex;

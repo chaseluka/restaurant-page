@@ -1,10 +1,6 @@
-function menuLoad() {
+const menuLoad = (() => {
     const content = document.getElementById('content');
-    const menu = document.getElementById('menu');
-
-    content.style.cssText = 'background-image: none;'
-
-    //container content
+    
 
     const nameContainer = document.createElement('div');
     nameContainer.classList.add('name-container');
@@ -14,31 +10,17 @@ function menuLoad() {
     cerealContainer.classList.add('cereal-container');
     const milksContainer = document.createElement('div');
     milksContainer.classList.add('milks-container');
-
-    menu.appendChild(nameContainer);
-    menu.appendChild(bowlContainer);
-    menu.appendChild(cerealContainer);
-    menu.appendChild(milksContainer);
-
-    //Name content
-
+    
     const name = document.createElement('div');
     name.classList.add('name');
     name.textContent = 'Mike\'s Cereal Shack';
-
-    nameContainer.appendChild(name);
-
-    //Bowl Content
     
     const bowlSelection = document.createElement('div');
     bowlSelection.classList.add('selection-title');
     bowlSelection.textContent = 'Bowl Sizes';
     const bowlList = document.createElement('div');
     bowlList.classList.add('bowl-list');
-
-    bowlContainer.appendChild(bowlSelection);
-    bowlContainer.appendChild(bowlList);
-
+    
     const small = document.createElement('div');
     small.classList.add('bowl');
     small.textContent = 'Small $3.00';
@@ -48,27 +30,17 @@ function menuLoad() {
     const large = document.createElement('div');
     large.classList.add('bowl');
     large.textContent = 'Large $5.00';
-
-    bowlList.appendChild(small);
-    bowlList.appendChild(medium);
-    bowlList.appendChild(large);
-
-    //cereal content
-
+    
     const cerealSelection = document.createElement('div');
     cerealSelection.classList.add('selection-title');
     cerealSelection.textContent = 'Cereal Selection';
     const cerealList = document.createElement('div');
     cerealList.classList.add('cereal-list');
-
-    cerealContainer.appendChild(cerealSelection);
-    cerealContainer.appendChild(cerealList);
-
+        
     let cereals = [];
 
     for (let i = 0; i < 20; i++){
         const cereal = document.createElement('div');
-        cerealList.appendChild(cereal);
         cereals.push(cereal);
     }
     cereals[0].textContent = 'Honey Nut Cheerios';
@@ -92,22 +64,16 @@ function menuLoad() {
     cereals[18].textContent = 'Trix';
     cereals[19].textContent = 'Oats';
     
-    //Milk Content
-
     const milksSelection = document.createElement('div');
     milksSelection.classList.add('selection-title');
     milksSelection.textContent = 'Milk Selection';
     const milksList = document.createElement('div');
     milksList.classList.add('milk-list');
-
-    milksContainer.appendChild(milksSelection);
-    milksContainer.appendChild(milksList);
-
+    
     let milks = [];
 
-    for (let i = 0; i < 20; i++){
+    for (let i = 0; i < 6; i++){
         const milk = document.createElement('div');
-        milksList.appendChild(milk);
         milks.push(milk);
     }
     milks[0].textContent = '2%';
@@ -116,6 +82,35 @@ function menuLoad() {
     milks[3].textContent = 'Nonfat';
     milks[4].textContent = 'Almond';
     milks[5].textContent = 'Oat';
-}
+
+    const menuAppend = () => {
+        const menu = document.getElementById('menu');
+        content.style.cssText = 'background-image: none;';
+        menu.appendChild(nameContainer);
+        menu.appendChild(bowlContainer);
+        menu.appendChild(cerealContainer);
+        menu.appendChild(milksContainer);
+
+        nameContainer.appendChild(name);
+        
+        bowlContainer.appendChild(bowlSelection);
+        bowlContainer.appendChild(bowlList);
+
+        bowlList.appendChild(small);
+        bowlList.appendChild(medium);
+        bowlList.appendChild(large);
+        
+        cerealContainer.appendChild(cerealSelection);
+        cerealContainer.appendChild(cerealList);
+        cereals.forEach(cereal => cerealList.appendChild(cereal));
+        
+        milks.forEach(milks => milksList.appendChild(milks));
+
+        milksContainer.appendChild(milksSelection);
+        milksContainer.appendChild(milksList);
+
+    }
+    return {menuAppend}
+})();
 
 export { menuLoad }

@@ -3,7 +3,7 @@ function headerLoad(){
 
     const header = document.createElement('div');
     header.classList.add('header');
-    
+
     content.appendChild(header);
     
 
@@ -22,5 +22,5 @@ function headerLoad(){
     header.appendChild(headerContact);
 };
 
-export { pageLoad }
+export { headerLoad }
 
