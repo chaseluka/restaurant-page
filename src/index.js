@@ -3,6 +3,7 @@ import { menuLoad } from './menu';
 import { contactLoad } from './contact';
 import { homeLoad } from './home';
 import { footerLoad } from './footer';
+import './style.css';
 
 const content = document.getElementById('content');
 const home = document.createElement('div');
