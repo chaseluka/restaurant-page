@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/chaseluka/restaurant-page/issues"
   },
-  "homepage": "https://github.com/chaseluka/restaurant-page",
+  "homepage": ".",
   "devDependencies": {
     "css-loader": "^6.7.2",
     "less-loader": "^11.1.0",
