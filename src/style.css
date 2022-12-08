@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-image: url("../images/cereal.jpg");
+  background-image: url("./cereal.jpg");
   background-size: cover;
   background-position: bottom;
   z-index: -1;
