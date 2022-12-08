@@ -1,161 +1,171 @@
-@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
 
 body {
-    margin: 0px;
-    font-family: 'Odibee Sans', 'Sans Serif';
-    background-color: #fdfff5;
-    overflow-x: hidden;
+  margin: 0px;
+  font-family: "Odibee Sans", "Sans Serif";
+  background-color: #fdfff5;
+  overflow-x: hidden;
 }
 
 #content {
-    background-color: #fdfff5;
-    width: 100vw;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(../images/cereal.jpg);
-    background-size: cover;
-    background-position: bottom;
-    z-index: -1;
+  background-color: #fdfff5;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../images/cereal.jpg");
+  background-size: cover;
+  background-position: bottom;
+  z-index: -1;
 }
 
-#menu, #contact{
-    margin: 3vmax 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #333;
-    flex-direction: column;
-    gap: max(20px, 4vmax);
-    font-size: min(2vmax, 20px);
+#menu,
+#contact {
+  margin: 3vmax 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  flex-direction: column;
+  gap: max(20px, 4vmax);
+  font-size: min(2vmax, 20px);
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: max(5px, 2vw);
-    font-size: min(2.2vmax, 30px);
-    text-decoration: underline;
-    text-underline-offset: 17%;
-    background-color: #00000066;
-    width: 100%;
-    min-height: 7vh;
-    height: max(80px, 8vh)
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: max(5px, 2vw);
+  font-size: min(2.2vmax, 30px);
+  text-decoration: underline;
+  text-underline-offset: 17%;
+  background-color: #00000066;
+  width: 100%;
+  min-height: 7vh;
+  height: max(80px, 8vh);
 }
 
 .header > div {
-    padding: 1%;
-    border-radius: 10px;
+  padding: 1%;
+  border-radius: 10px;
 }
 
 .header > div:hover {
-    background-color: #4e4e4edd;
-    transform: scale(1.1);
+  background-color: #4e4e4edd;
+  transform: scale(1.1);
 }
 
-
 .homepage-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.2vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2vmax;
 }
 
 .homepage-title {
-    font-size: 5.6vmax;
+  font-size: 5.6vmax;
 }
 
 .footer {
-    width: 100%;
-    min-height: 6vh;
-    height: max(20px, 8vh);
-    background-color: #00000066;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-size: min(2vmax, 20px);
+  width: 100%;
+  min-height: 6vh;
+  height: max(20px, 8vh);
+  background-color: #00000066;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: min(2vmax, 20px);
 }
 
 .name {
-    font-size: 4vmax;
+  font-size: 4vmax;
 }
 
 .selection-title {
-    font-weight: bolder;
-    text-decoration: underline;
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
-.bowl-list, .cereal-container, .milks-container, .bowl-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: min(3vmax, 25px);
+.bowl-list,
+.cereal-container,
+.milks-container,
+.bowl-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: min(3vmax, 25px);
 }
 
-.cereal-container, .milks-container, .bowl-container {
-    flex-direction: column;
+.cereal-container,
+.milks-container,
+.bowl-container {
+  flex-direction: column;
 }
 
 .milks-container {
-    max-height: fit-content;
+  max-height: fit-content;
 }
 
 .milk-list {
-    max-height: 100px;
+  max-height: 100px;
 }
 
 .cereal-list {
-    display: grid;
-    grid-template: repeat(4, 1fr) / repeat(5, 1fr);
-    gap: min(3vmax, 25px);
-    margin: 2%;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(5, 1fr);
+  gap: min(3vmax, 25px);
+  margin: 2%;
 }
 
 .milk-list {
-    display: grid;
-    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-    gap: min(3vmax, 25px);
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  gap: min(3vmax, 25px);
 }
 
-.contact-container, .contact-info, .about-container, .about-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5vmax;
+.contact-container,
+.contact-info,
+.about-container,
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vmax;
 }
 
-.contact-us, .about-owner {
-    font-size: 4vmax;
+.contact-us,
+.about-owner {
+  font-size: 4vmax;
 }
 
-.contact-container, .about-container {
-    gap: max(20px, 2.7vmax);
+.contact-container,
+.about-container {
+  gap: max(20px, 2.7vmax);
 }
 
 .about-info > img {
-    height: 25vh;
-    width: 25vw;
-    border: 10px solid rgb(100, 156, 230);
-    border-radius: 10px;
+  height: 25vh;
+  width: 25vw;
+  border: 10px solid rgb(100, 156, 230);
+  border-radius: 10px;
 }
 
 .about-info {
-    flex-direction: row;
-    gap: 2vmax;
+  flex-direction: row;
+  gap: 2vmax;
 }
 
 .about-container {
-    padding: 4%;
-    gap: 1vmax;
+  padding: 4%;
+  gap: 1vmax;
 }
 
 .about-text {
-    max-width: 250px;
+  max-width: 250px;
 }
